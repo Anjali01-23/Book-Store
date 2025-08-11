@@ -1,6 +1,5 @@
-export const PORT = 5555;
+import dotenv from "dotenv";
+dotenv.config();
 
-export const mongoDBURL =
-  "mongodb+srv://anugoyal4102:8955abcde@cluster0.u71opb7.mongodb.net";
-// Please create a free database for yourself.
-// This database will be deleted after tutorialhy67
+export const PORT = process.env.PORT;
+export const mongoDBURL = process.env.MONGO_URI;
